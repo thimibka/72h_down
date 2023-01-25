@@ -55,27 +55,32 @@ async function displayGamesDetail(arg) {
   let content = "";
   content += `
   <div class="restru">
- 
-<img src="${GamesData.background_image}"></img>
+
+<img class="imgDetail" src="${GamesData.background_image}"></img></div>
 
  <div class="nameRatioDetail">
- <h3 class="nameDetail">${GamesData.name}</h3>
-<h4 class="ratioDetail">ratio:${ratingGame}/5</h4>
+ <div class="nameDetail"><h3 >${GamesData.name}</h3></div>
+<div class="ratioDetail"><h4 >ratio:${ratingGame}/5</h4></div>
 </div> 
 
- <div class="descriptionDetail">
- <p>Description${GamesData.description}</p>
- </div>
 
-  <div class="detail">
-  <div class="releasedDetail">sortie<div class=""></div> ${releasedDate}</div>
-    <div class="editorDetail">édité<div class=""> ${nameEditor}</div>  </div>
-      <div class="platFormDetail">platform <div class="">${platForm} </div>   </div>
-       <div class="studioDetail">studio<div class="">${studioName}</div> </div></div>
+<div class ="gameDescription">
+<div class="desciptionDetailGame"><h3>Description:</h3></div>
+<div class="descriptionDetail"><p> ${GamesData.description}</p></div>
+</div>
+
+ <div class="detail">
+  <div class="releasedDetail"><h3>Release Date</h3><div class=""> ${releasedDate}</div></div>
+    <div class="editorDetail"><h3>Developer</h3><div class=""> ${nameEditor}</div>  </div>
+      <div class="platFormDetail"><h3>Platforms</h3> <div class="">${platForm} </div>   </div>
+       <div class="studioDetail"><h3>Publisher</h3><div class="">${studioName}</div> </div></div>
     
+
+
      <div class="genreTagDetail">
-     <div class="genreDetail">genre<div class="">${genreGame} </div> </div>
-    <div class="tagsDetail">Tags<div class=""> ${tagsName}</div>  </div>   
+
+     <div class="genreDetail"><h3>Genre</h3><div class="">${genreGame} </div></div>
+      <div class="tagsDetail"><h3>Tags</h3><div class=""> ${tagsName}</div></div>   
      </div> 
   
     
@@ -125,7 +130,7 @@ async function getMovieGame(mov) {
   let contentMovie = "";
   if (mov.length > 0) {
     contentMovie += `
-    <video width="1000" height="00" controls>
+    <video width="1000" height="500" controls>
   <source src="${mov[0].data.max}" type="video/mp4">
   </video>
    `;
@@ -141,7 +146,7 @@ async function getScreenCount(co) {
   for (let i = 0; i < 4; i++) {
     contentScreen += `
   
-    <img  width="500" height="300" src="${co[i].image}"></img>`;
+    <img  width="400" height="200" src="${co[i].image}"></img>`;
   }
   return contentScreen;
 }

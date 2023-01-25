@@ -3,16 +3,22 @@
   margin: 0;
   box-sizing: border-box;
   background-color: rgb(20, 20, 20);
+      box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
 }
 .input{
   display: flex;
   justify-content: flex-end;
 }
 input{
-  background-color: azure;
+  background-color:white;
+  margin-right: 50px;
+  height: 40px;
+  border-radius: 15px;
 }
 #showMore{
-  background-color: azure;
+  background-color:white;
 }
 h1{
   color: red;
@@ -30,7 +36,7 @@ h1{
   margin: 0 auto;
 }
 .grid-item {
-  color: azure;
+  color:white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,84 +56,100 @@ h1{
 
 }
 .nameHome {
-  color: azure;
+  color:white;
 }
 .platformHome {
-  color: azure;
+  color:white;
 }
 
 // detail page--------------------------------
+.imgDetail{
+   width: 100%;
+  height: 800px;
 
+
+}
 .nameRatioDetail {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 50px;
+
 }
 
 .nameDetail {
-  color: azure;
+  color:white;
   font-size: 50px;
+margin-right: 350px;
 }
 .ratioDetail {
   color: rgb(179, 23, 23);
   font-size: 30px;
-}
-
-.descriptionDetail {
-  display: flex;
-  justify-content: center;
-  color: azure;
+  margin-top: 25px;
   margin-bottom: 50px;
+  margin-left: 50px;
+}
+.gameDescription{
+  color:white;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+.desciptionDetailGame{
+  margin-bottom: 5px;
 }
 
 .detail {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 35px;
+  margin-right: 40px;
 }
 
 .releasedDetail {
-  color: azure;
-}
-.releasedDetailName {
+  color:white;
 }
 
+
 .editorDetail {
-  font-size: 20px;
-  color: azure;
+
+  color:white;
 }
 .editorDetailName {
   display: flex;
   align-items: flex-end;
 }
 .platFormDetail {
-  font-size: 20px;
-  color: azure;
+  
+  color:white;
 }
 .studioDetail {
-  font-size: 20px;
-  color: azure;
+ 
+  color:white;
 }
 
 .genreTagDetail {
   display: flex;
-  justify-content: space-around;
-  margin-right: 250px;
+  justify-content: space-between;
+
 }
 
 .genreDetail {
-  font-size: 20px;
-  color: azure;
+
+  color:white;
   margin-top: 20px;
-  margin-right: 150px;
+  margin-left: 33px;
 }
 .genreDetailName {
   display: flex;
   align-items: flex-end;
 }
 .tagsDetail {
-  font-size: 20px;
-  color: azure;
+ 
+  color:white;
   margin-top: 20px;
+  margin-right: 670px;
+
 }
 .tagsDetailName {
   display: flex;
@@ -135,12 +157,14 @@ h1{
 }
 .webSite {
   margin-top: 50px;
-  color: azure;
+  color:white;
+  margin-left: 35px ;
 }
 
 .noteNumber {
-  color: azure;
+  color:white;
   margin-top: 50px;
+  margin-left: 35px;
 }
 
 .movie {
@@ -149,8 +173,10 @@ h1{
 }
 
 .globalScreen {
+    margin-left: 80px;
 }
 .screen {
   display: contents;
   justify-content: space-between;
+
 }

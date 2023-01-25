@@ -6,6 +6,11 @@ let numberPages = 9;
 
 export const Home = (argument = "") => {
   displayHomeGamesData("", numberPages);
+  showMore.addEventListener("click", () => {
+    if (numberPages < 27) {
+      displayHomeGamesData(argument, (numberPages += 9));
+    }
+  });
 };
 
 function getAPILinkHome(value, size) {
@@ -49,7 +54,6 @@ async function getGamePlatform(data) {
     nintendo: `src="../logo/switch.svg"`,
     pc: `scr="../logo/windows.svg"`,
     ios: `src="../logo/mobile.svg"`,
-    
   };
 
   data.forEach(async (element) => {
@@ -59,11 +63,6 @@ async function getGamePlatform(data) {
   return content;
 }
 
-showMore.addEventListener("click", () => {
-  if (numberPages < 27) {
-    displayHomeGamesData((numberPages += 9));
-  }
-});
 
 const moninput = document.getElementById("choice");
 moninput.addEventListener("keyup", async (event) => {
