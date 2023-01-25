@@ -38,9 +38,7 @@ async function displayHomeGamesData(searchValue, size) {
   <img src="${element.background_image}" class="thumbnail-home"><div class="">${element.name}</div>
        <div class="">${platform}</div>
        <a href="#pagedetail/${element.slug}">En savoir plus</a>
-   
-
-   </div>
+  </div>
     `;
     app.innerHTML = content;
   });
@@ -49,11 +47,11 @@ async function displayHomeGamesData(searchValue, size) {
 async function getGamePlatform(data) {
   let content = "";
   const platform = {
-    playstation: ` src="../logo/ps4.svg"`,
-    xbox: `src="../logo/xbox.svg"`,
-    nintendo: `src="../logo/switch.svg"`,
-    pc: `scr="../logo/windows.svg"`,
-    ios: `src="../logo/mobile.svg"`,
+    playstation: `src="../logo/ps4.svg"`,
+    xbox:        `src="../logo/xbox.svg"`,
+    nintendo:    `src="../logo/switch.svg"`,
+    pc:          `scr="../logo/windows.svg"`,
+    ios:         `src="../logo/mobile.svg"`,
   };
 
   data.forEach(async (element) => {
@@ -62,7 +60,6 @@ async function getGamePlatform(data) {
   });
   return content;
 }
-
 
 const moninput = document.getElementById("choice");
 moninput.addEventListener("keyup", async (event) => {
