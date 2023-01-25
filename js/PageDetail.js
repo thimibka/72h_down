@@ -92,7 +92,7 @@ async function displayGamesDetail(arg) {
     <div class="movie">${moviesGame}</div>
 
     <div class="globalScreen">
-    <div class="screen">screenshots ${countScreen}</div>  </div>  
+    <div class="screen"> ${countScreen}</div>  </div>  
 
 
   
