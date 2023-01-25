@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(20, 20, 20);
+}
+.input{
+  display: flex;
+  justify-content: flex-end;
+}
+input{
+  background-color: azure;
+}
+#showMore{
+  background-color: azure;
+}
+h1{
+  color: red;
+  font-size: 50px;
+}
+// home page------------------------------
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 550px);
+  grid-gap: 50px;
+  justify-content: center;
+
+  padding: 10px;
+  margin: 0 auto;
+}
+.grid-item {
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  height: 500px;
+
+}
+.thumbnail-home {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+
+}
+.nameHome {
+  color: azure;
+}
+.platformHome {
+  color: azure;
+}
+
+// detail page--------------------------------
+
+.nameRatioDetail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.nameDetail {
+  color: azure;
+  font-size: 50px;
+}
+.ratioDetail {
+  color: rgb(179, 23, 23);
+  font-size: 30px;
+}
+
+.descriptionDetail {
+  display: flex;
+  justify-content: center;
+  color: azure;
+  margin-bottom: 50px;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.releasedDetail {
+  color: azure;
+}
+.releasedDetailName {
+}
+
+.editorDetail {
+  font-size: 20px;
+  color: azure;
+}
+.editorDetailName {
+  display: flex;
+  align-items: flex-end;
+}
+.platFormDetail {
+  font-size: 20px;
+  color: azure;
+}
+.studioDetail {
+  font-size: 20px;
+  color: azure;
+}
+
+.genreTagDetail {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 250px;
+}
+
+.genreDetail {
+  font-size: 20px;
+  color: azure;
+  margin-top: 20px;
+  margin-right: 150px;
+}
+.genreDetailName {
+  display: flex;
+  align-items: flex-end;
+}
+.tagsDetail {
+  font-size: 20px;
+  color: azure;
+  margin-top: 20px;
+}
+.tagsDetailName {
+  display: flex;
+  align-items: flex-end;
+}
+.webSite {
+  margin-top: 50px;
+  color: azure;
+}
+
+.noteNumber {
+  color: azure;
+  margin-top: 50px;
+}
+
+.movie {
+  display: flex;
+  justify-content: center;
+}
+
+.globalScreen {
+}
+.screen {
+  display: contents;
+  justify-content: space-between;
+}
